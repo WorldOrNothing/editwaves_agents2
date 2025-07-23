@@ -1,1 +1,3 @@
-# editwaves_agents2
+/spec_writer
+/webflow_builder
+/utils
