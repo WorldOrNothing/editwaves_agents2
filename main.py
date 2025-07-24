@@ -46,3 +46,10 @@ def make_spec(data: Brief):
         return spec.dict()
     except Exception as e:
         return {"error":"json_parse_failed", "raw": resp, "msg": str(e)}
+
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get("/")
+def ping():
+    return {"ok": True}
