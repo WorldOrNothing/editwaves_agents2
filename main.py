@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import os, json, traceback
 import openai
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()                      # ← CRÉÉ AVANT TOUTES LES ROUTES
 
